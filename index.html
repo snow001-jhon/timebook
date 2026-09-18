@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2537212003413083');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2537212003413083&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Landing Page</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d2230;
+display:flex;
+justify-content:center; 
+align-items:center;
+min-height:100vh;
+padding:20px;
+}
+
+.container{
+width:100%;
+max-width:420px;
+text-align:center;
+}
+
+.logo{
+width:150px;
+height:150px;
+border-radius:50%;
+background:#fff;
+padding:8px;
+object-fit:cover;
+margin-bottom:20px;
+}
+
+h1{
+color:#6bff66;
+font-size:34px;
+margin-bottom:25px;
+}
+
+.btn{
+display:block;
+background:#66d0df;
+color:#fff;
+text-decoration:none;
+padding:18px;
+font-size:24px;
+font-weight:bold;
+border-radius:18px;
+border:3px solid #fff;
+box-shadow:0 0 25px #66d0df;
+margin-bottom:30px;
+}
+
+.timer{
+color:#fff;
+font-size:24px;
+margin-bottom:25px;
+}
+
+#count{
+font-size:70px;
+font-weight:bold;
+display:block;
+}
+
+.card{
+background:#fff;
+color:#222;
+padding:18px;
+border-radius:15px;
+margin:14px 0;
+font-size:20px;
+font-weight:bold;
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.footer{
+color:#bbb;
+margin-top:25px;
+font-size:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="logo.jpg.jpeg" class="logo">
+
+<h1>Global Book Publication</h1>
+
+<a class="btn" id="joinBtn" href="https://t.me/+T3diNJmktz1mNGY9">
+JOIN TELEGRAM
+</a>
+
+<div class="timer">
+Redirect In
+<span id="count">030</span>
+Seconds
+</div>
+
+<div class="card">📚 Online Writing Platform</div>
+
+<div class="card">🏠 Work From Home 100% Trusted</div>
+
+<div class="card">🎓 For Students & Housewives</div>
+
+<div class="card">💰 Advance Salary After Registration</div>
+
+<div class="card">⏰ 24×7 Platform Available</div>
+
+<div class="footer">
+<a id="adsBtn" href="#" target="_blank" style="color:#bbb;text-decoration:none;">
+
+</a>
+</div>
+
+</div>
+
+<script>
+const joinTelegram = "https://t.me/+T3diNJmktz1mNGY9";
+const adsTelegram = "";
+document.getElementById("joinBtn").href = joinTelegram;
+document.getElementById("adsBtn").href = adsTelegram;
+
+let time=030;
+
+const counter=document.getElementById("count");
+
+const timer=setInterval(()=>{
+
+time--;
+
+counter.innerHTML=time;
+
+if(time<=0){
+
+clearInterval(timer);
+
+window.location.href = joinTelegram;
+
+}
+
+},1000);
+
+</script>
+
+</body>
+</html>
